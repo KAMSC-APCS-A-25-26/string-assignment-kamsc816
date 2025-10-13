@@ -17,5 +17,16 @@ public class PalindromeChecker {
         //       "<original> is a palindrome"
         //       "<original> is not a palindrome"
         //       where <original> is exactly what the user typed (preserve casing).
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String word = scan.nextLine();
+        StringBuilder sb = new StringBuilder(word);
+        String wordR = sb.reverse().toString();
+        if(word.equals(wordR)){
+            System.out.println(word + " is a palindrome");
+        }
+        else{
+            System.out.println(word + " is not a palindrome");
+        }
     }
 }
