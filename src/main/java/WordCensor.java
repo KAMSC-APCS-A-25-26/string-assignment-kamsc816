@@ -15,11 +15,11 @@ public class WordCensor {
         String oops = "oops";
         String yikes = "yikes";
 
-        String dinput = input.replace(dang, "***");
-        String dinput = input.replace(nuts, "***");
-        String dinput = input.replace(oops, "***");
-        String dinput = input.replace(yikes, "***");
-        System.out.println("Censored: " + dinput);
+        input = input.replace(dang, "***");
+        input = input.replace(nuts, "***");
+        input = input.replace(oops, "***");
+        input = input.replace(yikes, "***");
+        System.out.println("Censored: " + input);
 
 
 
