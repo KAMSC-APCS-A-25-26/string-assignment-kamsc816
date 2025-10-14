@@ -9,6 +9,21 @@ public class WordCensor {
         Scanner sc = new Scanner(System.in);
         System.out.println("Example input: ");
         String input = sc.nextLine();
+
+        String dang = "dang";
+        String nuts = "nuts";
+        String oops = "oops";
+        String yikes = "yikes";
+
+        String dinput = input.replace(dang, "***");
+        String dinput = input.replace(nuts, "***");
+        String dinput = input.replace(oops, "***");
+        String dinput = input.replace(yikes, "***");
+        System.out.println("Censored: " + dinput);
+
+
+
+
         
     }
 }
